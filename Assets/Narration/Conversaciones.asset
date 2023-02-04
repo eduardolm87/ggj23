@@ -745,6 +745,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: EventGuid
+        value: ccac7ada-79bd-4d4b-8712-a4cc9755da84
+        type: 0
+        typeString: 
       conversationID: 2
       isRoot: 0
       isGroup: 0
@@ -773,7 +777,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 120
+        y: 118.18182
         width: 160
         height: 30
     - id: 3
@@ -969,6 +973,10 @@ MonoBehaviour:
         typeString: 
       - title: Sequence
         value: 
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: 7b227dcf-cafc-44c0-8861-d2e421e5c828
         type: 0
         typeString: 
       conversationID: 2
