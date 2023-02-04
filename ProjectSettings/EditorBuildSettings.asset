@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Dialogue System Extras/CYOA Framework/Scenes/Title2.unity
+    guid: c9266772e9eeb3044b306a1a8ebfd67a
+  - enabled: 1
+    path: Assets/Dialogue System Extras/CYOA Framework/Scenes/Story.unity
+    guid: 00879dc26ace58f4594882157a686855
   m_configObjects: {}
