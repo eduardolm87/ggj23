@@ -11519,12 +11519,6 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 13
         destinationConversationID: 1
-        destinationDialogueID: 14
-        isConnector: 0
-        priority: 2
-      - originConversationID: 1
-        originDialogueID: 13
-        destinationConversationID: 1
         destinationDialogueID: 39
         isConnector: 0
         priority: 2
@@ -11562,7 +11556,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: It's late and it will get dark soon, but the jungle has food.
+        value: It will get dark soon, but the jungle has food.
         type: 0
         typeString: 
       - title: Sequence
@@ -12946,8 +12940,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 71.019165
-        y: 888.9263
+        x: 69.64931
+        y: 893.0358
         width: 160
         height: 30
     - id: 41
@@ -13087,7 +13081,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: Contnue();
+        value: Continue();
         type: 0
         typeString: 
       - title: EventGuid
@@ -13116,7 +13110,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 59.07699
-        y: 1491.6985
+        y: 1584.8492
         width: 160
         height: 30
     - id: 44
@@ -13341,8 +13335,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 1.7241516}
-    canvasZoom: 0.5799997
+    canvasScrollPosition: {x: 0, y: 1208.3234}
+    canvasZoom: 0.72999954
   syncInfo:
     syncActors: 0
     syncItems: 0
