@@ -348,7 +348,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: required SetSprite(Background, empty-white-room);
+        value: SendMessage(ResetCamera, ,TreeSequence);
         type: 0
         typeString: 
       - title: EventGuid
@@ -466,7 +466,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "MMF(play, SFXGood);\n{{default}};\r@0.25"
+        value: 
         type: 0
         typeString: 
       - title: EventGuid
@@ -586,7 +586,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "SetContinueMode(false);\r\nSendMessage(TreeSequenceStart,PIVOT-LEVEL2,TreeSequence);\r\nContinue()@Message(TreeSeqDone);\r\nSetContinueMode(true)@Message(TreeSeqDone);\r"
+        value: "MMF(play, SFXGood);\n{{default}};\r@0.25;"
         type: 0
         typeString: 
       conversationID: 2
@@ -1211,7 +1211,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'required Fade(in,4,#0000);
+        value: 'SendMessage(ResetCamera, ,TreeSequence);
+
+          required Fade(in,4,#0000);
 
           Continue()@4'
         type: 0
@@ -1301,7 +1303,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 55.731567}
+    canvasScrollPosition: {x: 0, y: 232.75856}
     canvasZoom: 0.58000034
   - id: 3
     fields:
@@ -1586,9 +1588,15 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'required Fade(in,2,#0000);
+        value: 'SetContinueMode(false);
 
-          Continue()@2'
+          SendMessage(TreeSequenceStart,PIVOT-LEVEL1,TreeSequence);
+
+          SetContinueMode(true)@Message(TreeSeqDone);
+
+          Fade(in,1,#0000);@Message(TreeSeqDone);
+
+          Continue()@Message(TreeSeqDone);'
         type: 0
         typeString: 
       - title: EventGuid
@@ -1647,7 +1655,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: "required Fade(in,2,#0000);\r"
         type: 0
         typeString: 
       conversationID: 4
@@ -1671,7 +1679,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
+        x: 27.647057
         y: 120
         width: 160
         height: 30
@@ -2016,7 +2024,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 3
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -2028,7 +2036,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: ...
+        value: 
         type: 0
         typeString: 
       - title: Sequence
@@ -2061,8 +2069,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 4.7059326, y: 0}
-    canvasZoom: 0.85000014
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.58000034
   - id: 5
     fields:
     - title: Title
@@ -2136,9 +2144,15 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'required Fade(in,2,#0000);
+        value: 'SetContinueMode(false);
 
-          Continue()@2'
+          SendMessage(TreeSequenceStart,PIVOT-LEVEL1,TreeSequence);
+
+          SetContinueMode(true)@Message(TreeSeqDone);
+
+          Fade(in,1,#0000);@Message(TreeSeqDone);
+
+          Continue()@Message(TreeSeqDone);'
         type: 0
         typeString: 
       - title: EventGuid
@@ -2197,7 +2211,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: required Fade(in,2,#0000);
         type: 0
         typeString: 
       - title: EventGuid
@@ -2225,7 +2239,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 290.0001
+        x: 299.43292
         y: 70
         width: 160
         height: 30
@@ -6982,8 +6996,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.25
+    canvasScrollPosition: {x: 1.4925537, y: 0}
+    canvasZoom: 0.66999984
   - id: 6
     fields:
     - title: Title
@@ -7057,9 +7071,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'required Fade(in,2,#0000);
-
-          Continue()@2'
+        value: 
         type: 0
         typeString: 
       - title: EventGuid
@@ -7118,7 +7130,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: Fade(in,3,#000000);
+        value: 
         type: 0
         typeString: 
       conversationID: 6
@@ -10061,7 +10073,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: required Delay(2);
+        value: 
         type: 0
         typeString: 
       - title: EventGuid
@@ -10120,9 +10132,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'required Fade(out,1,#000000);
-
-          required Delay(1);'
+        value: required Fade(out,1,#000000);
         type: 0
         typeString: 
       - title: EventGuid
@@ -10155,8 +10165,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 1284.4817}
-    canvasZoom: 0.58000016
+    canvasScrollPosition: {x: 5.4794617, y: 837.1498}
+    canvasZoom: 0.73
   - id: 7
     fields:
     - title: Title
@@ -10815,9 +10825,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 'required Fade(in,2,#0000);
-
-          Continue()@2'
+        value: "SetContinueMode(false);\r\nSendMessage(TreeSequenceStart,PIVOT-LEVEL1,TreeSequence);\r\nSetContinueMode(true)@Message(TreeSeqDone);\r\nFade(in,1,#0000);@Message(TreeSeqDone);\r\nContinue()@Message(TreeSeqDone);\r"
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
@@ -10876,7 +10884,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: required Fade(in,2,#0000);
         type: 0
         typeString: 
       conversationID: 1
@@ -10900,8 +10908,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 70
+        x: 205.12198
+        y: 71.21951
         width: 160
         height: 30
     - id: 3
@@ -13335,8 +13343,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 1275.3433}
-    canvasZoom: 0.72999954
+    canvasScrollPosition: {x: 97.93297, y: 0}
+    canvasZoom: 0.8199994
   syncInfo:
     syncActors: 0
     syncItems: 0
