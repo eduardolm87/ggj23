@@ -369,12 +369,6 @@ MonoBehaviour:
         destinationDialogueID: 1
         isConnector: 0
         priority: 2
-      - originConversationID: 2
-        originDialogueID: 0
-        destinationConversationID: 2
-        destinationDialogueID: 17
-        isConnector: 0
-        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -592,7 +586,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: "SetContinueMode(false);\r\nSendMessage(TreeSequenceStart,PIVOT-LEVEL2,TreeSequence);\r\nContinue()@Message(TreeSeqDone);\r\nSetContinueMode(true)@Message(TreeSeqDone);\r"
         type: 0
         typeString: 
       conversationID: 2
@@ -616,8 +610,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 220
+        x: 298.27588
+        y: 221.72415
         width: 160
         height: 30
     - id: 5
@@ -1190,55 +1184,6 @@ MonoBehaviour:
         y: 571.6394
         width: 160
         height: 30
-    - id: 17
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: -1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 2
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 300
-        y: 70
-        width: 160
-        height: 30
     - id: 18
       fields:
       - title: Title
@@ -1356,8 +1301,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 297.31766, y: 177.52768}
-    canvasZoom: 0.67000026
+    canvasScrollPosition: {x: 0, y: 55.731567}
+    canvasZoom: 0.58000034
   - id: 3
     fields:
     - title: Title

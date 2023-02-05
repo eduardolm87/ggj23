@@ -2496,6 +2496,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &201443231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8817667200693536381, guid: 12b73a3b9f67dd64c89e9ce492a03c5e, type: 3}
+  m_PrefabInstance: {fileID: 646654158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &211376514
 GameObject:
   m_ObjectHideFlags: 0
@@ -12706,6 +12711,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuPanel: {fileID: 1963607330}
+--- !u!1 &639627294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 639627294, guid: 12b73a3b9f67dd64c89e9ce492a03c5e, type: 3}
+  m_PrefabInstance: {fileID: 646654158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &646654158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12761,10 +12771,6 @@ PrefabInstance:
     - target: {fileID: 8817667200693536381, guid: 12b73a3b9f67dd64c89e9ce492a03c5e, type: 3}
       propertyPath: m_Name
       value: TreeCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 8817667200693536381, guid: 12b73a3b9f67dd64c89e9ce492a03c5e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23153,7 +23159,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f31ffb670ab814e839ec702f636ef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TreeScenario: {fileID: 0}
+  TreeScenario: {fileID: 201443231}
+  PlayerPivot: {fileID: 639627294}
+  UIObjects:
+  - {fileID: 1363279162}
+  - {fileID: 1599476749}
+  - {fileID: 250936551}
+  - {fileID: 588758288}
 --- !u!4 &986516827
 Transform:
   m_ObjectHideFlags: 0
