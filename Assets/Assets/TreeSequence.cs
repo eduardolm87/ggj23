@@ -26,7 +26,7 @@ public class TreeSequence : MonoBehaviour
         UIObjects.ForEach(x=>{
             x.SetActive(false);
         });
-        //Invoke("TreeSequenceEnd",0.1f);
+        Invoke("TreeSequenceEnd",0.1f);
 
         var target = _transforms.FirstOrDefault(x=>x.name == zNode);
         Debug.Log("me voy a nodo "+target.name+" que esta en pos "+target.position);
