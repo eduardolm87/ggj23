@@ -27,7 +27,7 @@ public class TreeSequence : MonoBehaviour
         UIObjects.ForEach(x=>{
             x.SetActive(false);
         });
-        Invoke("TreeSequenceEnd",4f);
+        Invoke("TreeSequenceEnd",0.1f);
     }
 
     IEnumerator Timer(float seconds) 
