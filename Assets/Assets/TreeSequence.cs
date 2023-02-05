@@ -8,7 +8,7 @@ using System.Linq;
 public class TreeSequence : MonoBehaviour
 {
     public GameObject TreeScenario;
-    public GameObject PlayerPivot;    
+    public GameObject TreeCamera;
     public List<GameObject> UIObjects = new List<GameObject>();
 
     List<Transform> _transforms = new List<Transform>();
@@ -16,25 +16,25 @@ public class TreeSequence : MonoBehaviour
 
     void Awake()
     {
-        TreeScenario.SetActive(false);
+       // TreeScenario.SetActive(false);
         _transforms = TreeScenario.GetComponentsInChildren<Transform>().ToList();
-        Debug.Log("tengo "+_transforms.Count+" hijos");
     }
 
-    public void TreeSequenceStart() 
+    public void TreeSequenceStart(string zNode) 
     {
         TreeScenario.SetActive(true);
         UIObjects.ForEach(x=>{
             x.SetActive(false);
         });
-        Invoke("TreeSequenceEnd",0.1f);
+        //Invoke("TreeSequenceEnd",0.1f);
+
+        var target = _transforms.FirstOrDefault(x=>x.name == zNode);
+        Debug.Log("me voy a nodo "+target.name+" que esta en pos "+target.position);
+
+
     }
 
-    IEnumerator Timer(float seconds) 
-    {
-        yield return new WaitForSeconds(seconds);
-        TreeSequenceEnd();
-    }
+    
 
 
     void TreeSequenceEnd()
@@ -44,6 +44,12 @@ public class TreeSequence : MonoBehaviour
         });
         TreeScenario.SetActive(false);
         Sequencer.Message("TreeSeqDone");
+    }
+
+    IEnumerator Timer(float seconds) 
+    {
+        yield return new WaitForSeconds(seconds);
+        TreeSequenceEnd();
     }
     
 }
